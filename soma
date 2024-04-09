@@ -1,0 +1,13 @@
+//Pequeno Programa em Linguagem C para somar numeros inteiros.
+#include <stdio.h>
+
+int main(){
+int numero1, numero2,soma;
+    printf("Digite algum numero: \n");
+    scanf("%i",&numero1);
+    printf("Digite outro valor: \n");
+    scanf("%i", &numero2);
+    soma = numero1 + numero2;
+    printf("os numeros que voce digitou foi %i e %i, que somado fica %i.\n", numero1, numero2,soma);
+    return 0;
+}
