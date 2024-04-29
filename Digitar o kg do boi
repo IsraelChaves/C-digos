@@ -17,3 +17,38 @@ int main() {
 
     return 0;
 }
+
+//Agora pedindo o Id dos bois
+
+#include <stdio.h>
+
+int main() {
+    float pesos[5];
+    int ids[5];
+    float maiorPeso = 0;
+    int idMaiorPeso;
+    int i;
+
+    printf("Digite os IDs e os pesos de 5 bois, em quilos:\n");
+    for (i = 0; i < 5; i++) {
+        printf("Digite o ID do boi %d: ", i + 1);
+        scanf("%d", &ids[i]);
+        printf("Digite o peso do boi %d (ID %d): ", i + 1, ids[i]);
+        scanf("%f", &pesos[i]);
+
+        if (pesos[i] > maiorPeso) {
+            maiorPeso = pesos[i];
+            idMaiorPeso = ids[i];
+        }
+    }
+
+    printf("\nIDs e pesos dos bois sao:\n");
+    for (i = 0; i < 5; i++) {
+        printf("Boi %d (ID %d) - Peso: %.2f kg\n", i + 1, ids[i], pesos[i]);
+    }
+
+    printf("\nO boi com o maior peso e o ID %d, com %.2f kg\n", idMaiorPeso, maiorPeso);
+
+    return 0;
+}
+
