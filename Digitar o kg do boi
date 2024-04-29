@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float pesos[5];
+    int i;
+
+    printf("Digite os pesos de 5 bois, em quilos:\n");
+    for (i = 0; i < 5; i++) {
+        printf("Peso do boi %d: ", i + 1);
+        scanf("%f", &pesos[i]);
+    }
+
+    printf("\nOs pesos dos bois sao:\n");
+    for (i = 0; i < 5; i++) {
+        printf("Peso do boi %d: %.2f kg\n", i + 1, pesos[i]);
+    }
+
+    return 0;
+}
